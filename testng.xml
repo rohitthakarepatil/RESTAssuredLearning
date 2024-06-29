@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" name="C:/Users/ASUS/Desktop/Rohit/REST_API_learning/Rest_API_Learning">
+        <classes>
+            <class name="com.CRUD.GET.GetHeroku">
+                <methods>
+                    <include name="getRequestNonBDDPositive"/>
+                    <include name="getRequestNonBDDNegative"/>
+                </methods>
+            </class>
+            <class name="com.CRUD.GET.GetNonBDDStyle">
+                <methods>
+                    <include name="getRequestNonBDD"/>
+                    <include name="getRequestNonBDD2"/>
+                </methods>
+            </class>
+            <class name="com.CRUD.GET.GetRequestBDDStyle">
+                <methods>
+                    <include name="getRequestBddStyle"/>
+                </methods>
+            </class>
+            <class name="com.CRUD.PATCH.PatchRequest">
+                <methods>
+                    <include name="updateRecord"/>
+                </methods>
+            </class>
+            <class name="com.CRUD.POST.PostBDDStyle">
+                <methods>
+                    <include name="PostRequestBDDStyle"/>
+                </methods>
+            </class>
+            <class name="com.CRUD.POST.PostNonBDDStyle">
+                <methods>
+                    <include name="PostRequestNonBDDStyle"/>
+                </methods>
+            </class>
+            <class name="com.CRUD.PUT.PutrequestNonBDDStyle">
+                <methods>
+                    <include name="updateRecord"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+<!--below is used for running a complete package-->
+<!--    <packages>-->
+<!--        <package name="com.CRUD*"/>-->
+<!--    </packages>-->
+</suite>
